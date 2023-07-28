@@ -1,17 +1,34 @@
-let display = document.getElementById("display");
+let displayValue = "";
 
-function appendToDisplay(value) {
-  display.value += value;
+function updateDisplay() {
+  document.getElementById("display").value = displayValue;
 }
 
-function clearDisplay() {
-  display.value = "";
+function appendToDisplay(val) {
+  displayValue += val;
+  updateDisplay();
 }
 
 function calculate() {
   try {
-    display.value = eval(display.value);
+    displayValue = eval(displayValue).toString();
+    updateDisplay();
   } catch (error) {
-    display.value = "Error";
+    displayValue = "Error";
+    updateDisplay();
   }
 }
+
+function clearDisplay() {
+  displayValue = "";
+  updateDisplay();
+}
+
+function clearSingleDigit() {
+  if (displayValue.length > 0) {
+    displayValue = displayValue.slice(0, -1);
+    updateDisplay();
+  }
+}
+
+updateDisplay();

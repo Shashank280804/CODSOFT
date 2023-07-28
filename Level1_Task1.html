@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Ease - Parking Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .welcome-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .welcome-container h1 {
+            font-size: 3rem;
+            margin-top: 0;
+            color: #fff;
+            /* White */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            /* Black */
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background-color 0.3s, color 0.3s;
+            /* Added color transition */
+            margin-top: 1rem;
+            box-shadow: 2px 2px 4px rgba(52, 11, 11, 0.048);
+            /* Shadow effect */
+        }
+
+        .cta-button:hover {
+            background-color: #111;
+            /* Slightly lighten on hover */
+            color: #eee;
+            /* Lighten text on hover */
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature p {
+            font-size: 1.1rem;
+            color: #fff;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            /* Align links to the right */
+            align-items: center;
+            background-color: #000;
+            /* Black */
+            padding: 1rem;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        .login-icon {
+            font-size: 1.2rem;
+            margin-left: auto;
+        }
+
+        .website-name {
+            font-size: 2rem;
+            color: #fff;
+            /* White */
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .section-content {
+            padding: 2rem;
+            background-color: #fff;
+            /* White */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            color: #333;
+            /* Black */
+            margin-bottom: 1rem;
+        }
+
+        .section-content p {
+            font-size: 1.1rem;
+            color: #555;
+            /* Mild gray color */
+        }
+
+        .section-content ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+
+        .section-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="website-name">Park Ease</div>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            <div class="login-icon">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="welcome-container">
+            <h1>Welcome</h1>
+            <div class="cta-buttons-container">
+                <a href="#about" class="cta-button">Get Started</a>
+
+            </div>
+        </div>
+
+        <div class="hero">
+            <p>Book your parking spot online and save time and effort!</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h2>Convenient</h2>
+                <p>Find and reserve parking spots easily.</p>
+            </div>
+            <div class="feature">
+                <h2>Affordable</h2>
+                <p>Lowest rates for daily and monthly parking.</p>
+            </div>
+            <div class="feature">
+                <h2>Secure</h2>
+                <p>Safe and secure parking facilities.</p>
+            </div>
+            <div class="feature">
+                <h2>24/7 Assistance</h2>
+                <p>Our customer support is available round the clock to assist you.</p>
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="section-content">
+                <h2>About Us</h2>
+                <p>
+                    Park Ease is a reliable and user-friendly parking service provider. Our mission is to make parking
+                    hassle-free and
+                    convenient for our customers. We offer a wide range of parking options for all your needs. With
+                    secure and
+                    well-maintained parking facilities, we ensure that your vehicle is safe while you're away.
+                    Experience the ease of
+                    booking your parking spot online with Park Ease.
+                    At Park Ease, we understand the challenges and frustrations associated with finding suitable parking
+                    spaces, and that's why we are dedicated to simplifying the process for our customers. Our mission is
+                    to provide a seamless and stress-free parking experience, allowing our patrons to focus on what
+                    matters most without worrying about their vehicles.
+
+                    Led by our visionary CEO, Shashank Patil, our team is driven by a passion for innovation and
+                    customer satisfaction. Under his leadership, Park Ease has consistently raised the bar in the
+                    parking industry, setting new standards and continuously exploring ways to enhance our services.
+
+                    As an organization, we take great pride in our commitment to safety and security. Our parking
+                    facilities are equipped with advanced surveillance systems, round-the-clock security personnel, and
+                    stringent access controls, ensuring that our customers' vehicles are in safe hands.
+
+                    We also believe in embracing technology to stay at the forefront of the industry. Our user-friendly
+                    online platform allows customers to book parking spots conveniently from the comfort of their homes
+                    or offices. Whether it's daily parking, monthly parking, valet services, or airport parking, Park
+                    Ease offers a comprehensive range of options to cater to diverse requirements.
+
+                    With a customer-centric approach, we strive to build long-lasting relationships with each client,
+                    understanding their needs and preferences to deliver personalized solutions. Our relentless pursuit
+                    of excellence, combined with a passion for providing unmatched services, has made us a preferred
+                    choice for parking solutions.
+                    At Park Ease, we are driven by our core values of integrity, reliability, and customer satisfaction.
+                    As we continue to grow and expand our services, we remain committed to delivering unparalleled
+                    parking experiences and becoming the go-to parking service provider for individuals and businesses
+                    seeking convenience and peace of mind.
+                </p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="section-content">
+                <h2>Services</h2>
+                <p>
+                    Our services include daily and monthly parking options, valet parking, and airport parking. Whether
+                    you need a
+                    short-term spot for a few hours or a long-term solution for several months, Park Ease has got you
+                    covered. Our
+                    dedicated customer support team is available 24/7 to assist you with any queries or concerns. Book
+                    your parking
+                    spot with Park Ease and enjoy a stress-free parking experience.
+                </p>
+                <p>
+                    Our Features:
+                </p>
+                <ul>
+
+                    <li>
+                        <p>
+
+                            1. Daily and Monthly Parking Options:
+                            - Choose from a wide range of parking facilities conveniently located in key areas.
+                            - Enjoy flexible payment options for both short-term and long-term parking plans.
+                            - Reserve your parking spot in advance, ensuring availability during peak hours.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>2. Valet Parking:
+                            - Experience the ultimate convenience with our valet service, available at premium
+                            locations.
+                            - Our well-trained valets are equipped to handle all types of vehicles, ensuring top-notch
+                            service.
+                            - Valet parking is perfect for special events, date nights, and business gatherings.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            3. Airport Parking:
+                            - Take the stress out of travel with our airport parking solutions.
+                            - Park your car securely in our designated airport parking zones, monitored 24/7.
+                            - Our shuttle service provides seamless transfers to and from the airport terminals, saving
+                            you
+                            time and effort.
+                        </p>
+
+                    </li>
+
+                    <li>
+                        <p>4. 24/7 Assistance:
+                            - Our customer support team is available round the clock to assist you with any parking
+                            queries
+                            or concerns.
+                            - Get real-time help and support whenever you need it.
+                        </p>
+                    </li>
+                    </p>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <p>
+                    For any inquiries or assistance, feel free to contact our support team. You can reach us via phone,
+                    email, or by
+                    filling out the contact form below. We value your feedback and strive to provide the best parking
+                    solutions to meet
+                    your needs. Park with ease, only with Park Ease.
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
