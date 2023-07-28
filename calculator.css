@@ -1,4 +1,4 @@
-/* Reset styles for better consistency */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -68,7 +68,6 @@ button:hover {
   background-color: #ff5959;
 }
 
-/* Align the = button and make it span two columns */
 .calculate {
   grid-column: span 2;
 }
